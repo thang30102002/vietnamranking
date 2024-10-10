@@ -1,0 +1,26 @@
+.information-player .img-player{
+    width: 11rem;
+}
+.information-player,.achievements{
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 800;
+    font-family: emoji;
+}
+.information-player ul{
+        padding: 0;
+            list-style-type: none;
+}
+.information-player ul li{
+    margin-top: 5px;
+}
+.achievements{
+    flex-direction: column!important;
+    margin-top: 1rem;
+}
