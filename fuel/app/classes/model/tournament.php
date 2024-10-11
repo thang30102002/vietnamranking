@@ -17,4 +17,9 @@
             $tournaments = self::find('all');
             return $tournaments;
         }
+        public static function get_detail_tournaments($id)
+        {
+            $tournament = self::find($id);
+            return $tournament;
+        }
     }
