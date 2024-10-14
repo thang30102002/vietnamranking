@@ -1,11 +1,12 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark menu">
   <div class="container-fluid">
     <a class="navbar-brand" href="/player/index">Logo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
+      <ul class="navbar-nav me-auto ul-menu">
         <li class="nav-item">
           <a class="nav-link" href="/player/index">Ranking</a>
         </li>
@@ -16,13 +17,16 @@
           <a class="nav-link" href="javascript:void(0)">Link</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
-        
-      </form>
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Login
+      </button>
     </div>
   </div>
 </nav>
+<!-- Button trigger modal -->
 <?php echo View::forge('player/login');?>
+
+
+
+
+

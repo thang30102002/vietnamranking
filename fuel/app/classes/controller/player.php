@@ -28,10 +28,6 @@
 			}
 			
 		}
-		public static function action_login()
-		{
-			return Response::forge(View::forge('player/login'));
-		}
 		public static function action_detail_tournament()
 		{
 			$id = Uri::segment(3);

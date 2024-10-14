@@ -1,8 +1,8 @@
-<?php echo Asset::css('player/footer.css');?>
+
 <footer>
     <div class="sponsors-partners">
         <h1>SPONSORS AND PARTNERS</h1>
-        <div class="row row-cols-2 row-cols-md-2 row-cols-xl-5 g-3 justify-content-center">
+        <div class="row row-cols-2 row-cols-md-2 row-cols-xl-5 g-3 justify-content-center row-footer">
             <div class="col">
                 <img src="https://matchroompool.com/wp-content/uploads/rasson-sponsor-logo.svg" alt="">
             </div>

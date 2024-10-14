@@ -1,0 +1,397 @@
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* Đảm bảo body luôn có ít nhất chiều cao của cửa sổ trình duyệt */
+    display: flex;
+    /* Đặt flexbox nếu muốn nội dung được căn giữa */
+    flex-direction: column;
+    /* Đặt các phần tử theo trục dọc */
+}
+.div-name {
+    width: 100%;
+    text-align: center;
+    background-color: #21324c !important;
+}
+
+.div-name h2 {
+    color: #fff;
+}
+
+.w3-text-teal {
+    color: #21324c !important;
+}
+
+.information-tournament {
+    color: #21324c;
+    font-size: 2rem;
+}
+
+.information-tournament i {
+    margin-right: 8px;
+}
+
+.btn-in-tournament {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+}
+
+.btn-in-tournament button {
+    border-radius: 0;
+    background-color: #21324c;
+    border: none;
+    font-size: 1.3rem;
+}
+/* footer */
+.sponsors-partners h1,
+.information-connect h1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: emoji;
+}
+.row-footer{
+    padding: 0;
+}
+
+footer {
+    padding: 10 !important;
+}
+
+.row img {
+    width: 100%;
+}
+
+.information-connect ul {
+    padding: 0;
+    text-align: center;
+    /* text-decoration: none; */
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #445972;
+}
+
+.sponsors-partners {
+    border-style: solid;
+    /* border-top: 0; */
+    border-left: 0;
+    border-color: #445972;
+    padding: 10px;
+    border-right: 0;
+    margin: 17px 0;
+    border-width: 1px;
+}
+/* ////////////////// */
+/* index */
+body {
+    background-color: #21324c !important;
+}
+.btn-player-2{
+    background-color: #21324c !important;
+    width: 100%;
+    border: none;
+}
+.title {
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: emoji;
+}
+
+.ranking-player {
+    width: 80%;
+    margin: auto;
+    margin-top: 7rem;
+    background-color: #21324c;
+}
+
+.player {
+    margin-top: 15px;
+    position: relative;
+    font-weight: 700;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    color: #21324c;
+    border-radius: 15px;
+    background-color: #e8e8e8;
+}
+
+.number-ranking h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.img-player img {
+    width: 12.5rem;
+}
+
+.information {
+    position: absolute;
+    right: 15px;
+    width: 50%;
+}
+
+.information .name {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.information .money {
+    font-size: 1.4rem;
+    color: red;
+}
+
+.player_2 {
+    align-items: center;
+    display: flex;
+    color: #fff;
+    padding: 8px 10px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #fff;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.information_2 {
+    margin-left: 2rem;
+}
+
+.number-ranking_2 h3 {
+    color: red;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.information_2 .name_2 {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.information_2 .money_2 {
+    color: red;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn-player {
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    background-color: #e8e8e8;
+}
+/* ???????//// */
+/* information-player */
+.information-player .img-player {
+    width: 11rem;
+}
+
+.information-player,
+.achievements {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 800;
+    font-family: emoji;
+}
+
+.information-player ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.information-player ul li {
+    margin-top: 5px;
+}
+
+.achievements {
+    flex-direction: column !important;
+    margin-top: 1rem;
+}
+/* ///////////////// */
+/* tournament */
+.btn-tournament {
+    margin-top: 1rem;
+}
+
+.information-tournament ul {
+    padding: 0 5px;
+    list-style-type: none;
+    text-align: left;
+    font-size: 0.7rem;
+    color: red;
+}
+
+.information-tournament .title-tournament {
+    color: #21324c !important;
+}
+
+.tournament {
+    margin: 0 !important;
+}
+
+.ranking-player .btn-player-1 {
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    background-color: #e8e8e8;
+}
+
+.ranking-player form {
+    margin-top: 1rem;
+}
+/* menu */
+.container-fluid {
+    justify-content: left!important ;
+}
+.navbar-toggler{
+    position: absolute;
+    right: 3rem;
+}
+.ul-menu{
+    padding: 0 2rem;
+}
+.menu{
+    width: 100%;
+    z-index: 999;
+    opacity: 0.9;
+    position:fixed!important;
+}
+/* form login */
+/* Bordered form */
+.modal-body form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+.modal-body input[type=text],
+.modal-body input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.modal-body button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+.modal-body button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.modal-body .container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+.modal-body span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    .modal-body span.psw {
+        display: block;
+        float: none;
+    }
+
+    .modal-body .cancelbtn {
+        width: 100%;
+    }
+}
+.modal-login .modal-header{
+    position: relative;
+}
+.modal-login .close{
+    position: absolute;
+    right: 2rem;
+}
+.modal-login .modal-header{
+    border: 0!important;
+}
+.modal-login .btn-login, .modal-login .btn-cancel{
+    background-color: #21324c;
+}
+.modal-login{
+    padding: 0;
+        /* display: flex!important;
+        justify-content: center!important;
+        align-items: center!important; */
+}
+.modal-login .container{
+    width: 100%;
+}
+.modal-login .btn-primary{
+    background-color: #21324c!important;
+}
+/* detail */
+.body-detail-player{
+    margin-top: 7rem!important;
+}
+.body-detail-player p{
+    font-size: 2rem;
+}
+/* tournament */
+.info-tournament{
+    text-align: left;
+}
