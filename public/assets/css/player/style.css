@@ -15,7 +15,12 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.alert{
+    z-index: 999999999999;
+}
+.text-color-red{
+    color: brown;
+}
 body {
     min-height: 100vh;
     /* Đảm bảo body luôn có ít nhất chiều cao của cửa sổ trình duyệt */
@@ -41,6 +46,9 @@ body {
 .information-tournament {
     color: #21324c;
     font-size: 2rem;
+}
+.info-tournament ul{
+    list-style-type: none;
 }
 
 .information-tournament i {
@@ -148,7 +156,6 @@ body {
 }
 
 .information {
-    position: absolute;
     right: 15px;
     width: 50%;
 }
@@ -391,7 +398,14 @@ img.avatar {
 .body-detail-player p{
     font-size: 2rem;
 }
+.body-detail-player .w3-row-padding,.w3-third{
+    padding: 0!important;
+}
 /* tournament */
 .info-tournament{
     text-align: left;
+    font-size: 1rem;
+}
+.sponsors-partners .row{
+    margin: 0!important;
 }

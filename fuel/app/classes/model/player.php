@@ -5,7 +5,6 @@
             'id',
             'name',
             'money',
-            'email',
             'phone',
             'ranking',
         );
@@ -22,6 +21,17 @@
         public static function get_detail_player($i)
         {
             $player = self::find($i);
+            return $player;
+        }
+        public static function add_player($name, $money, $phone, $ranking, $password)
+        {
+            $player = new Model_Player;
+            $player -> name = $name;
+            $player -> money = $money;
+            $player -> phone = $phone;
+            $player -> ranking = $ranking;
+            $player -> password = $password;
+            $player -> save();
             return $player;
         }
     }

@@ -63,11 +63,68 @@
 		}
 		public static function post_tournament()
 		{
-			if(Input::post('action') == 'detail-tournament')
+			if(Input::post('action') == 'detail')
 			{
 				$id=Input::post('id');
 				return Response::redirect("player/detail_tournament/$id");
 			}
 		}
+		public static function action_register()
+		{
+			$name = Input::post('name');
+			$ranking = Input::post('ranking');
+			$phone = Input::post('phone');
+			$password = Input::post('password');
+			if(self::check_phone_db($phone))
+			{
+				$addPlayer = Model_Player::add_player($name,0,$phone,$ranking,$password);
+				if($addPlayer)
+				{
+					Session::set_flash('success', 'Đăng ký tài khoản thành công!');
+					return Response::redirect('player');	
+				}
+				else
+				{
+					Session::set_flash('error', 'Đăng ký tài khoản không thành công!');
+					return Response::redirect('player');	
+				}
+			}
+			else
+			{
+				Session::set_flash('error', 'Số điện thoại đã được sử dụng. Vui lòng lấy lại mật khẩu hoặc sử dụng số điện thoại khác');
+				return Response::redirect('player');	
+			}
+			
+		}
+		public static function check_phone_db($phone)
+		{
+			$player = Model_Player::query()->where('phone', $phone)->get();
+
+			if (!empty($player)) {
+				return false;
+			} else {
+				return true;
+			}
+
+		}
+		public static function check_notification()
+        {
+            if (Session::get_flash('success'))
+            {
+                echo  "<div id='notification' class='alert alert-success'>
+                        ".Session::get_flash('success')."
+                    </div>";
+            }   
+            if (Session::get_flash('error'))
+            {
+                echo  "<div id='notification' class='alert alert-danger'>
+                        ".Session::get_flash('error')."
+                    </div>";
+            }
+        }
+        public function before()
+        {
+            $check_notification = self::check_notification();
+        }
         
     }

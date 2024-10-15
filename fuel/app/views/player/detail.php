@@ -34,7 +34,6 @@
         <div class="w3-container ">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Hang: <?php echo $player -> ranking?></p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Viet Nam</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $player -> email;?></p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $player -> phone;?></p>
           <hr>
 

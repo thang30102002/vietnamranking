@@ -25,8 +25,22 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Đăng ký</button>
+        <button type="button" class="btn btn-primary" id="register" data-toggle="modal" data-target="#registerModal">Đăng ký</button>
       </div>
     </div>
   </div>
 </div>
+<?php echo View::forge('player/register');?>
+<!-- Thêm jQuery và Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // Đóng modal đăng nhập và mở modal đăng ký
+    $("#register").click(function() {
+      $("#exampleModal").modal("hide"); // Đóng modal đăng nhập
+      //$("#registerModal").modal("show"); // Mở modal đăng ký
+    });
+  });
+</script>
