@@ -18,7 +18,7 @@ return array(
 	 *
 	 */
 
-	'_root_' => 'welcome/index',
+	'_root_' => 'player',
 
 	/**
 	 * -------------------------------------------------------------------------
@@ -39,4 +39,17 @@ return array(
 	 */
 
 	'hello(/:name)?' => array('welcome/hello', 'name' => 'hello'),
+	'player/info' => 'player/info',
+	'player/checkTkon' =>'player/checkTkon',
+	'player/wallet' => 'player/wallet',	
+	'api/tournament/(:id)?' => 'api/tournament/detail/$1',
+	'login' => 'account/index',
+	'logout' => 'account/logout',
+	'player/detail/(:id)' =>'player/detail/$1',
+	'getPass' => 'account/getPass',
+	'register' => 'account/register',
+	'checkTkonGetPass' => 'account/checkTkonGetPass',
+	'checkTkon' => 'account/checkTkon',
+
+
 );

@@ -8,19 +8,17 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="action_page.php" method="post">
+        <form action="/login" method="post">
           <div class="container">
-            <label for="phone"><b>Số điện thoại </b></label>
-            <input type="text" placeholder="Vui lòng nhập số điện thoại" name="phone" required>
-
+            <label for="email"><b> Email </b></label>
+            <input type="text" placeholder="Vui lòng nhập email"  name="email" required>
             <label for="psw"><b>Mật khẩu</b></label>
-            <input type="password" placeholder="Vui lòng nhập mật khẩu" name="psw" required>
-
-            <button class="btn-login" type="submit">Đăng nhập</button>
+            <input type="password" placeholder="Vui lòng nhập mật khẩu"  name="password" required>
+            <button name="action" value="login" class="btn-login btn-modal-body" type="submit">Đăng nhập</button>
           </div>
 
           <div class="container" style="background-color:#f1f1f1">
-            <span class="psw">Lấy lại <a href="#">mật khẩu ?</a></span>
+            <span class="psw">Lấy lại <button class="btn-get-pass"data-toggle="modal" data-target="#getPassModal">mật khẩu ?</button></span>
           </div>    
         </form>
       </div>
@@ -31,16 +29,8 @@
   </div>
 </div>
 <?php echo View::forge('player/register');?>
+<?php echo View::forge('player/modal_get_password');?>
 <!-- Thêm jQuery và Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script>
-  $(document).ready(function() {
-    // Đóng modal đăng nhập và mở modal đăng ký
-    $("#register").click(function() {
-      $("#exampleModal").modal("hide"); // Đóng modal đăng nhập
-      //$("#registerModal").modal("show"); // Mở modal đăng ký
-    });
-  });
-</script>

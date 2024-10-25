@@ -1,25 +1,30 @@
 <?php
+
+
     class Model_Tournament extends Orm\Model
     {
-        protected static $_properties = array(
-            'id',
-            'name',
-            'number_players',
-            'address',
-            'start_date',
-            'end_date',
-            'money_top_1',
-            'money_top_2',
-            'money_top_3',
-        );
         public static function get_all_tournaments()
         {
-            $tournaments = self::find('all');
-            return $tournaments;
+            $current_time = date('Y-m-d H:i:s');
+
+            $tournaments = self::query()
+                ->where('start_date', '>', $current_time)
+                ->get();
+                return $tournaments;
         }
         public static function get_detail_tournaments($id)
         {
             $tournament = self::find($id);
             return $tournament;
         }
+
+        
+        // protected static $_has_many = array(
+        //     'tournamentRankings' => array(
+        //         'key_from' => 'id',
+        //         'model_to' => 'Model_RankingTournament',
+        //         'key_to' => 'id_tournament',
+        //     ),
+        // );
+
     }

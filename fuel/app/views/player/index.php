@@ -15,8 +15,6 @@
     <?php echo Asset::js('index.js');?>
 </head>
 <body>
-    <?php
-    ?>
     <div class="ranking-player">
         <h1 class="title">TOP RANKING</h1>
         <?php $number=1; foreach($players as $player):?>
